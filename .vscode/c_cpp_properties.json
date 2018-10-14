@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "/Users/dave/Documents/Arduino/tools/**",
+                "/Users/dave/Documents/Arduino/hardware/espressif/esp32/**"
+            ],
+            "forcedInclude": []
+        }
+    ]
+}
