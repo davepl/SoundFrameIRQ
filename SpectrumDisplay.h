@@ -63,13 +63,13 @@ class SpectrumDisplay
         float seconds = (millis() - lastDecay) / (float)MS_PER_SECOND;
         lastDecay = millis();
 
-        float decayAmount1 = max (0, seconds * gPeakDecay);
+        float decayAmount1 = std::max(0.0f, seconds * gPeakDecay);
         float decayAmount2 = seconds * PEAK2_DECAY_PER_SECOND;
 
         for (int iBand = 0; iBand < BAND_COUNT; iBand++)
         {
-            _peak1Decay[iBand] -= min(decayAmount1, _peak1Decay[iBand]);    
-            _peak2Decay[iBand] -= min(decayAmount2, _peak2Decay[iBand]);    
+            _peak1Decay[iBand] -= std::min(decayAmount1, _peak1Decay[iBand]);    
+            _peak2Decay[iBand] -= std::min(decayAmount2, _peak2Decay[iBand]);    
         }
     }
 
@@ -116,7 +116,7 @@ class SpectrumDisplay
 		    msPeakAge = PeakFadeTime_ms;
 	    
         float agePercent = (float) msPeakAge / (float) MS_PER_SECOND;
-	    byte fadeAmount = min(255, agePercent * 256);
+	    byte fadeAmount = std::min(255.0f, agePercent * 256);
 
         colorHighlight = CRGB(CRGB::White).fadeToBlackBy(fadeAmount);
 

@@ -396,7 +396,7 @@ class SoundAnalyzer
 		float raw = analogRead(BRIGHTNESS_PIN);				// Brightness is logrithmic, so we do the opposite
 		raw = mapFloat(raw, 0, 4096, 1.5, 10);
 		raw = roundf(raw);
-		gBrightness = min(255,powf(raw, 2.52f));
+		gBrightness = std::min(255.0f,powf(raw, 2.52f));
 
         raw = analogRead(COLOR_SPEED_PIN);
         raw = mapFloat(raw, 0, 4096, 0, MAX_COLOR_SPEED);

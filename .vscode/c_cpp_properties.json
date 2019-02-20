@@ -3,10 +3,30 @@
         {
             "name": "Mac",
             "includePath": [
+                "/Users/dave/Documents/Arduino/libraries/U8g2/src",
+                "/Users/dave/Documents/Arduino/libraries/arduinoFFT/src",
+                "/Users/dave/Documents/Arduino/libraries/Adafruit_GFX_Library",
+                "/Users/dave/Documents/Arduino/libraries/FastLED",
+                "/Users/dave/Documents/Arduino/libraries/arduino_810031/src/*",
+                "/Users/dave/Library/Arduino15/packages/esp32/tools/**",
+                "/Users/dave/Library/Arduino15/packages/esp32/hardware/esp32/1.0.1/**",
+                "/Users/dave/Documents/Arduino/hardware/espressif/esp32/libraries/WiFi/src/**",
+                "/Users/dave/Library/Arduino15/packages/esp32/hardware/esp32/1.0.1/libraries/WiFi/src/**",
                 "/Users/dave/Documents/Arduino/tools/**",
-                "/Users/dave/Documents/Arduino/hardware/espressif/esp32/**"
+                "/Users/dave/Documents/Arduino/hardware/espressif/esp32/**",
+                "/Users/dave/Documents/Arduino/libraries/ESPAsyncWebServer-master/src/*",
+                "/Users/dave/Documents/Arduino/libraries/AsyncTCP-master/src/*",
+                "/Users/dave/Documents/Arduino/libraries/ESPAsyncTCP-master/src/*",
+                "/Users/dave/Documents/Arduino/libraries/Adafruit_GFX_Library/*",
+                "/Users/dave/Documents/Arduino/libraries/Adafruit_GFX_Library/Fonts/*"
             ],
-            "forcedInclude": []
+            "forcedInclude": [],
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
+            "intelliSenseMode": "clang-x64"
         }
-    ]
+    ],
+    "version": 4
 }
