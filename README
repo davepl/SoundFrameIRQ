@@ -1,0 +1,7 @@
+This is an old drop of my analyzer before I combined it with a different (Matrix) codebase that I'm not sharing yet, and I fixed a number of things later, but this does in fact work!
+
+The big change I made in the next version was to switch to I2S because IRQ uses so much CPU.  But if you're not doing other word anyway, and this isn't, the IRQ approach works and makes sense.
+
+I'll try to respond to issues as time permits!
+
+- Dave
